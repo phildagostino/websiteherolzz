@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SV Germania Herolz | Anmeldung</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">SV</span>
+        <div class="brand-text">
+          <strong>Germania Herolz</strong>
+          <span>Blau • Weiß</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link" href="teams.html">Teams</a>
+        <a class="nav-link" href="fanshop.html">Fanshop</a>
+        <a class="nav-link active" href="anmeldung.html">Anmeldung</a>
+        <a class="nav-link" href="infos.html">Infos</a>
+        <a class="nav-link" href="fragen.html">Fragen</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Darkmode umschalten">
+          <span class="icon">🌙</span>
+        </button>
+
+        <a class="icon-btn" href="fanshop.html" title="Warenkorb">
+          <span class="icon">🛒</span>
+          <span class="badge" id="cartBadge">0</span>
+        </a>
+
+        <button class="burger" id="burger" type="button" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Start</a>
+      <a href="teams.html" class="mobile-link">Teams</a>
+      <a href="fanshop.html" class="mobile-link">Fanshop</a>
+      <a href="anmeldung.html" class="mobile-link">Anmeldung</a>
+      <a href="infos.html" class="mobile-link">Infos</a>
+      <a href="fragen.html" class="mobile-link">Fragen</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Anmeldung & Spenden</h1>
+        <p class="muted">
+          
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="two-col">
+          <div class="card">
+            <h2>Mitglied werden</h2>
+            <p class="muted">Fülle die Daten aus. Das Formular ist Frontend-Demo (kein Server).</p>
+
+            <form id="signupForm">
+              <div class="form-grid">
+                <label class="field">
+                  <span>Vorname</span>
+                  <input class="input" type="text" name="vorname" placeholder="Max" required>
+                </label>
+
+                <label class="field">
+                  <span>Nachname</span>
+                  <input class="input" type="text" name="nachname" placeholder="Mustermann" required>
+                </label>
+
+                <label class="field">
+                  <span>E-Mail</span>
+                  <input class="input" type="email" name="email" placeholder="max@mail.de" required>
+                </label>
+
+                <label class="field">
+                  <span>Telefon</span>
+                  <input class="input" type="tel" name="telefon" placeholder="+49 ...">
+                </label>
+
+                <label class="field full">
+                  <span>Adresse</span>
+                  <input class="input" type="text" name="adresse" placeholder="Straße, Hausnr, PLZ Ort">
+                </label>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="stack">
+                <label class="check">
+                  <!-- // Mitglied ist standardmäßig aktiv -->
+                  <input type="checkbox" id="membership" checked>
+                  <span>Mitgliedschaft (50€ pro Jahr)</span>
+                </label>
+
+                <label class="check">
+                  <input type="checkbox" id="volunteer">
+                  <span>Ich kann ehrenamtlich helfen (z.B. Turniere, Aufbau, Orga)</span>
+                </label>
+
+                <label class="field">
+                  <span>Spende (optional)</span>
+                  <input class="input" id="donation" type="number" min="0" step="1" placeholder="z.B. 10">
+                </label>
+
+                <label class="field">
+                  <span>Zahlungsart</span>
+                  <select class="input" id="payment">
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Banküberweisung</option>
+                    <option value="kredit">Kreditkarte</option>
+                    <option value="bar">Bar</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="summary">
+                <div class="kv"><span>Mitglied</span><strong id="sumMembership">50,00 €</strong></div>
+                <div class="kv"><span>Spende</span><strong id="sumDonation">0,00 €</strong></div>
+                <div class="kv total"><span>Gesamt</span><strong id="sumTotal">50,00 €</strong></div>
+              </div>
+
+              <button class="btn primary" type="submit">Anmeldung absenden (Demo)</button>
+              <p class="muted tiny">
+        
+              </p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2>Was passiert danach?</h2>
+            <p class="muted">
+            </p>
+
+            <div class="list">
+              <div class="list-row">
+                <span>1) Prüfung</span>
+                <strong>Vorstand checkt Daten</strong>
+              </div>
+              <div class="list-row">
+                <span>2) Zahlung</span>
+                <strong>Je nach Zahlungsart</strong>
+              </div>
+              <div class="list-row">
+                <span>3) Aufnahme</span>
+                <strong>Bestätigung per Mail</strong>
+              </div>
+            </div>
+
+            <div class="callout">
+              <strong>Tipp:</strong>
+              <p class="muted">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>SV Germania Herolz</strong>
+          <p class="muted">Anmeldung mit Live-Summenberechnung.</p>
+        </div>
+        <div class="footer-links">
+          <a href="teams.html">Teams</a>
+          <a href="fanshop.html">Fanshop</a>
+          <a href="fragen.html">FAQ</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

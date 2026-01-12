@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SV Germania Herolz | Teams</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- // HEADER ist auf allen Seiten gleich (einheitliches Design) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">SV</span>
+        <div class="brand-text">
+          <strong>Germania Herolz</strong>
+          <span>Blau • Weiß</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link active" href="teams.html">Teams</a>
+        <a class="nav-link" href="fanshop.html">Fanshop</a>
+        <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+        <a class="nav-link" href="infos.html">Infos</a>
+        <a class="nav-link" href="fragen.html">Fragen</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Darkmode umschalten">
+          <span class="icon">🌙</span>
+        </button>
+
+        <a class="icon-btn" href="fanshop.html" title="Warenkorb">
+          <span class="icon">🛒</span>
+          <span class="badge" id="cartBadge">0</span>
+        </a>
+
+        <button class="burger" id="burger" type="button" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Start</a>
+      <a href="teams.html" class="mobile-link">Teams</a>
+      <a href="fanshop.html" class="mobile-link">Fanshop</a>
+      <a href="anmeldung.html" class="mobile-link">Anmeldung</a>
+      <a href="infos.html" class="mobile-link">Infos</a>
+      <a href="fragen.html" class="mobile-link">Fragen</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Teams & Gruppen</h1>
+        <p class="muted">
+          
+        </p>
+
+        <div class="tools">
+          <input class="input" id="teamSearch" type="text" placeholder="Suche z.B. 'C', 'Herren', 'Jugend'…"/>
+          <div class="chip-row" id="teamChips">
+            <button class="chip active" data-filter="all" type="button">Alle</button>
+            <button class="chip" data-filter="jugend" type="button">Jugend</button>
+            <button class="chip" data-filter="herren" type="button">Herren</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- // Team-Karten: klicken = springt zu Abschnitt -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-4" id="teamGrid">
+          <!-- Jugend -->
+          <a class="team-card" data-type="jugend" href="#team-a">
+            <strong>A-Jugend</strong><span class="muted">U19</span><span class="pill small">Jugend</span>
+          </a>
+          <a class="team-card" data-type="jugend" href="#team-b">
+            <strong>B-Jugend</strong><span class="muted">U17</span><span class="pill small">Jugend</span>
+          </a>
+          <a class="team-card" data-type="jugend" href="#team-c">
+            <strong>C-Jugend</strong><span class="muted">U15</span><span class="pill small">Jugend</span>
+          </a>
+          <a class="team-card" data-type="jugend" href="#team-d">
+            <strong>D-Jugend</strong><span class="muted">U13</span><span class="pill small">Jugend</span>
+          </a>
+          <a class="team-card" data-type="jugend" href="#team-e">
+            <strong>E-Jugend</strong><span class="muted">U11</span><span class="pill small">Jugend</span>
+          </a>
+          <a class="team-card" data-type="jugend" href="#team-f">
+            <strong>F-Jugend</strong><span class="muted">U9</span><span class="pill small">Jugend</span>
+          </a>
+          <a class="team-card" data-type="jugend" href="#team-g">
+            <strong>G-Jugend</strong><span class="muted">U7</span><span class="pill small">Jugend</span>
+          </a>
+
+          <!-- Herren -->
+          <a class="team-card" data-type="herren" href="#team-h1">
+            <strong>1. Herren</strong><span class="muted">Senioren</span><span class="pill small">Herren</span>
+          </a>
+          <a class="team-card" data-type="herren" href="#team-h2">
+            <strong>2. Herren</strong><span class="muted">Senioren</span><span class="pill small">Herren</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- // Details: Das ist “die echte Seite” pro Team, ohne extra Dateien -->
+    <section class="section soft" id="teamDetails">
+      <div class="container">
+        <div class="section-head">
+          <h2>Team-Infos</h2>
+          <p class="muted">
+           
+          </p>
+        </div>
+
+        <div class="team-detail" id="team-a">
+          <h3>A-Jugend <span class="muted">(U19)</span></h3>
+          <div class="detail-grid">
+            <div class="card">
+              <h4>Training</h4>
+              <p class="muted"></p>
+              <div class="kv"><span>Tag(e)</span><strong>—</strong></div>
+              <div class="kv"><span>Uhrzeit</span><strong>—</strong></div>
+              <div class="kv"><span>Platz</span><strong>—</strong></div>
+            </div>
+            <div class="card">
+              <h4>Kontakt</h4>
+              <p class="muted"></p>
+              <div class="kv"><span>Trainer</span><strong>—</strong></div>
+              <div class="kv"><span>E-Mail</span><strong>—</strong></div>
+              <div class="kv"><span>Telefon</span><strong>—</strong></div>
+            </div>
+            <div class="card">
+              <h4>Hinweise</h4>
+              <p class="muted">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-b">
+          <h3>B-Jugend <span class="muted">(U17)</span></h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+            <div class="card"><h4>Hinweise</h4><p class="muted"></p></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-c">
+          <h3>C-Jugend <span class="muted">(U15)</span></h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+            <div class="card"><h4>Hinweise</h4><p class="muted"></p></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-d">
+          <h3>D-Jugend <span class="muted">(U13)</span></h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+            <div class="card"><h4>Hinweise</h4><p class="muted"></p></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-e">
+          <h3>E-Jugend <span class="muted">(U11)</span></h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+            <div class="card"><h4>Hinweise</h4><p class="muted"></p></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-f">
+          <h3>F-Jugend <span class="muted">(U9)</span></h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+            <div class="card"><h4>Hinweise</h4><p class="muted"></p></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-g">
+          <h3>G-Jugend <span class="muted">(U7)</span></h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+            <div class="card"><h4>Hinweise</h4><p class="muted"></p></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-h1">
+          <h3>1. Herren</h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Spielbetrieb</h4><p class="muted"></p><div class="kv"><span>Liga</span><strong>—</strong></div><div class="kv"><span>Heim</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail</span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+          </div>
+        </div>
+
+        <div class="team-detail" id="team-h2">
+          <h3>2. Herren</h3>
+          <div class="detail-grid">
+            <div class="card"><h4>Training</h4><div class="kv"><span>Tag(e)</span><strong>—</strong></div><div class="kv"><span>Uhrzeit</span><strong>—</strong></div><div class="kv"><span>Platz</span><strong>—</strong></div></div>
+            <div class="card"><h4>Spielbetrieb</h4><p class="muted"></p><div class="kv"><span>Liga Kreiliga C</span><strong>—</strong></div><div class="kv"><span>Heim</span><strong>—</strong></div></div>
+            <div class="card"><h4>Kontakt</h4><div class="kv"><span>Trainer</span><strong>—</strong></div><div class="kv"><span>E-Mail </span><strong>—</strong></div><div class="kv"><span>Telefon</span><strong>—</strong></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>SV Germania Herolz</strong>
+          <p class="muted">Teams-Seite mit Filter, Sprungmarken und Details.</p>
+        </div>
+        <div class="footer-links">
+          <a href="anmeldung.html">Mitgliedschaft</a>
+          <a href="fanshop.html">Fanshop</a>
+          <a href="fragen.html">FAQ</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

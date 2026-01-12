@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SV Germania Herolz | Fanshop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">SV</span>
+        <div class="brand-text">
+          <strong>Germania Herolz</strong>
+          <span>Blau • Weiß</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link" href="teams.html">Teams</a>
+        <a class="nav-link active" href="fanshop.html">Fanshop</a>
+        <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+        <a class="nav-link" href="infos.html">Infos</a>
+        <a class="nav-link" href="fragen.html">Fragen</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Darkmode umschalten">
+          <span class="icon">🌙</span>
+        </button>
+
+        <button class="icon-btn" id="cartOpen" type="button" title="Warenkorb öffnen">
+          <span class="icon">🛒</span>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="burger" id="burger" type="button" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Start</a>
+      <a href="teams.html" class="mobile-link">Teams</a>
+      <a href="fanshop.html" class="mobile-link">Fanshop</a>
+      <a href="anmeldung.html" class="mobile-link">Anmeldung</a>
+      <a href="infos.html" class="mobile-link">Infos</a>
+      <a href="fragen.html" class="mobile-link">Fragen</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Fanshop</h1>
+        <p class="muted"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3 shop-grid">
+          <!-- // Produktkarten: per data-* liest script.js die Infos und packt sie in den Warenkorb -->
+          <article class="product card">
+            <div class="product-img">👕</div>
+            <h3>Vereins-Trikot (Blau)</h3>
+            <p class="muted">Standard Trikot, Druck optional.</p>
+            <div class="product-row">
+              <strong>39,90 €</strong>
+              <button class="btn small primary addToCart"
+                data-id="trikot-blau"
+                data-name="Vereins-Trikot (Blau)"
+                data-price="39.90"
+                type="button">In den Warenkorb</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="product-img">🧣</div>
+            <h3>Schal Blau/Weiß</h3>
+            <p class="muted">Warm, klassisch, perfekt fürs Spiel.</p>
+            <div class="product-row">
+              <strong>14,90 €</strong>
+              <button class="btn small primary addToCart"
+                data-id="schal"
+                data-name="Schal Blau/Weiß"
+                data-price="14.90"
+                type="button">In den Warenkorb</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="product-img">🧢</div>
+            <h3>Cap Germania</h3>
+            <p class="muted">Verstellbar, schlichtes Logo vorne.</p>
+            <div class="product-row">
+              <strong>19,90 €</strong>
+              <button class="btn small primary addToCart"
+                data-id="cap"
+                data-name="Cap Germania"
+                data-price="19.90"
+                type="button">In den Warenkorb</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="product-img">☕</div>
+            <h3>Tasse</h3>
+            <p class="muted">Für den Vereinsmorgen. Spülmaschinenfest.</p>
+            <div class="product-row">
+              <strong>9,90 €</strong>
+              <button class="btn small primary addToCart"
+                data-id="tasse"
+                data-name="Tasse"
+                data-price="9.90"
+                type="button">In den Warenkorb</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="product-img">🎒</div>
+            <h3>Sportbeutel</h3>
+            <p class="muted">Leicht, praktisch, Blau/Weiß.</p>
+            <div class="product-row">
+              <strong>12,90 €</strong>
+              <button class="btn small primary addToCart"
+                data-id="beutel"
+                data-name="Sportbeutel"
+                data-price="12.90"
+                type="button">In den Warenkorb</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="product-img">🧤</div>
+            <h3>Handschuhe (Winter)</h3>
+            <p class="muted">Für kalte Trainingstage.</p>
+            <div class="product-row">
+              <strong>11,90 €</strong>
+              <button class="btn small primary addToCart"
+                data-id="handschuhe"
+                data-name="Handschuhe (Winter)"
+                data-price="11.90"
+                type="button">In den Warenkorb</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- // Warenkorb Drawer -->
+    <aside class="drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <h2>Warenkorb</h2>
+          <button class="icon-btn" id="cartClose" type="button" aria-label="Warenkorb schließen">✖</button>
+        </div>
+
+        <div class="drawer-body" id="cartItems">
+          <!-- // wird von JS gerendert -->
+        </div>
+
+        <div class="drawer-foot">
+          <div class="kv">
+            <span>Summe</span>
+            <strong id="cartTotal">0,00 €</strong>
+          </div>
+          <button class="btn primary" id="checkoutFake" type="button">Zur Kasse (Demo)</button>
+          <button class="btn ghost" id="cartClear" type="button">Warenkorb leeren</button>
+          <p class="muted tiny">
+           
+          </p>
+        </div>
+      </div>
+      <div class="drawer-backdrop" id="cartBackdrop"></div>
+    </aside>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>SV Germania Herolz</strong>
+          <p class="muted">Fanshop mit Warenkorb (localStorage).</p>
+        </div>
+        <div class="footer-links">
+          <a href="anmeldung.html">Mitgliedschaft</a>
+          <a href="teams.html">Teams</a>
+          <a href="fragen.html">FAQ</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

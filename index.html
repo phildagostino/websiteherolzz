@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SV Germania Herolz | Start</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- // HEADER: Navigation + Darkmode Toggle -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">SV</span>
+        <div class="brand-text">
+          <strong>Germania Herolz</strong>
+          <span>Blau • Weiß</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Start</a>
+        <a class="nav-link" href="teams.html">Teams</a>
+        <a class="nav-link" href="fanshop.html">Fanshop</a>
+        <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+        <a class="nav-link" href="infos.html">Infos</a>
+        <a class="nav-link" href="fragen.html">Fragen</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Darkmode umschalten">
+          <span class="icon">🌙</span>
+        </button>
+
+        <a class="icon-btn" href="fanshop.html" title="Warenkorb">
+          <span class="icon">🛒</span>
+          <span class="badge" id="cartBadge">0</span>
+        </a>
+
+        <button class="burger" id="burger" type="button" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- // Mobile Nav: wird in script.js aufgeklappt -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="mobile-link">Start</a>
+      <a href="teams.html" class="mobile-link">Teams</a>
+      <a href="fanshop.html" class="mobile-link">Fanshop</a>
+      <a href="anmeldung.html" class="mobile-link">Anmeldung</a>
+      <a href="infos.html" class="mobile-link">Infos</a>
+      <a href="fragen.html" class="mobile-link">Fragen</a>
+    </div>
+  </header>
+
+  <!-- // HERO: Startbereich mit großem Text + CTA -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="pill">Willkommen beim</p>
+          <h1>SV Germania Herolz</h1>
+          <p class="lead">
+            Jugendfußball A–G, 1. & 2. Herren, Vereinsleben und Teamspirit.
+            Hier findest du Teams, Infos, Fanshop und die Anmeldung.
+          </p>
+
+          <div class="btn-row">
+            <a class="btn primary" href="teams.html">Zu den Teams</a>
+            <a class="btn ghost" href="anmeldung.html">Mitglied werden</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <strong>A–G Jugend</strong>
+              <span>Von Minis bis A-Jugend</span>
+            </div>
+            <div class="stat">
+              <strong>1. & 2. Herren</strong>
+              <span>Training & Spielbetrieb</span>
+            </div>
+            <div class="stat">
+              <strong>Blau/Weiß</strong>
+              <span>Vereinsfarben</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- // Bild-Placeholder: du kannst später ein echtes Bild einfügen -->
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <span class="tag">News</span>
+              <span class="tag soft">Heimspiel</span>
+            </div>
+            <h3>Nächstes Spiel</h3>
+            <p class="muted">
+              Trage hier später echte Termine ein. Diese Box ist bewusst so gebaut,
+              dass sie auf jeder Bildschirmgröße gut aussieht.
+            </p>
+            <div class="list">
+              <div class="list-row">
+                <span>Datum</span><strong>—</strong>
+              </div>
+              <div class="list-row">
+                <span>Gegner</span><strong>—</strong>
+              </div>
+              <div class="list-row">
+                <span>Ort</span><strong>—</strong>
+              </div>
+            </div>
+            <a class="btn small" href="infos.html">Mehr Infos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- // FEATURE CARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Alles auf einen Blick</h2>
+          <p class="muted">Schneller Einstieg, ohne dass die Seite “billig” wirkt.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Teams & Jugenden</h3>
+            <p class="muted">A–G Jugend und 1./2. Herren übersichtlich mit Filter und Sprungmarken.</p>
+            <a class="link" href="teams.html">Öffnen →</a>
+          </article>
+
+          <article class="card">
+            <h3>Fanshop</h3>
+            <p class="muted">Artikel-Layout + Warenkorb (ohne echtes Bezahlen, aber realistisch).</p>
+            <a class="link" href="fanshop.html">Öffnen →</a>
+          </article>
+
+          <article class="card">
+            <h3>Anmeldung</h3>
+            <p class="muted">Mitgliedschaft (50€) + Spenden + Zahlungsart Auswahl, sauberer Aufbau.</p>
+            <a class="link" href="anmeldung.html">Öffnen →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- // FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>SV Germania Herolz</strong>
+          <p class="muted">Website-Projekt für Schule. Inhalte können Platzhalter sein.</p>
+        </div>
+        <div class="footer-links">
+          <a href="infos.html">Impressum/Infos</a>
+          <a href="fragen.html">FAQ</a>
+          <a href="anmeldung.html">Mitgliedschaft</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
